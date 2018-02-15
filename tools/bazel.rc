@@ -1,0 +1,14 @@
+### Common settings
+common --show_timestamps=true
+common --show_task_finish=true
+common --color=yes
+
+startup --expand_configs_in_place
+
+# Enable verbose logging of the actions executed
+# Note: if --explain is not uncommented, --verbose_explanations is ignored
+build --verbose_explanations --explain /tmp/bazel_explain.log
+
+### Test settings
+# By default prints output only from failed tests.
+test --test_output=errors

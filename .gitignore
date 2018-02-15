@@ -1,0 +1,14 @@
+# Vendor is created via dep ensure, but we don't really care about it here
+vendor/*
+
+# Bazel-generated directories
+bazel-bin
+bazel-genfiles
+bazel-gopath
+bazel-out
+bazel-test-bazel
+bazel-test-case-gazelle
+bazel-testlogs
+
+# Generated automatically via gazelle
+testapp/BUILD.bazel
